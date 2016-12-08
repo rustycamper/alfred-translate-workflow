@@ -4,9 +4,9 @@
 
 Usage:
 ---
-* tr <query>: translate query.
-* tr-setkey: set your Google Translate API key.
-* tr-setlang: set target language (language to translate to).
+* `tr` <query>: translate query.
+* `tr-setkey` <API key>: set your Google Translate API key.
+* `tr-setlang` <language>: set target language (language to translate to).
 
 
 *Note*: You won't need to set a source (from) language. Google is pretty good at guessing.
