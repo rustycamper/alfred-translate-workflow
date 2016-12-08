@@ -351,11 +351,6 @@ Have fun!</string>
 			<integer>150</integer>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>lang</key>
-		<string>Español</string>
-	</dict>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>

@@ -3,7 +3,7 @@
 import os
 import sys
 import argparse
-import urllib
+import urllib2
 
 from workflow import Workflow, web, ICON_WARNING, PasswordNotFound
 
@@ -26,7 +26,14 @@ def get_translations(api_key, target_lang, query):
 
     # Throw an error if request failed.
     # Workflow will catch this and show it to the user.
-    r.raise_for_status()
+    try:
+        r.raise_for_status()
+    except urllib2.HTTPError as e:
+        if e.code == 400:
+            raise RuntimeError('Please make sure that your Google '
+                               'API key is correct - invalid request.')
+        else:
+            raise e
 
     # Parse the JSON returned and extract the translations.
     result = r.json()
@@ -112,7 +119,7 @@ def main(wf):
                     largetext=tr['translatedText'],
                     quicklookurl='https://translate.google.com/#auto/'
                                  + target_lang + '/'
-                                 + urllib.quote(query),
+                                 + urllib2.quote(query),
                     icon=get_icon())
 
     # Send output to Alfred as XML.
