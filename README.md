@@ -13,9 +13,16 @@ Usage:
 
 Features:
 ---
-* Simple - setup once and just use it.
-* Secure - keys are stored in Mac's native Keychain tool.
-* Fast - all queries are cached for speed.
+* Simple: setup once and just use it.
+* Secure: keys are stored in Mac's native Keychain tool.
+* Fast: repeat queries are cached for speed.
+
+Keyboard Shortcuts:
+---
+* Enter: copy translation to clipboard.
+* Command + C: copy translation to clipboard.
+* Command + Y: show quick preview on Google Translate web site.
+* Command + L: show translation in large font.
 
 Requirements:
 ---
