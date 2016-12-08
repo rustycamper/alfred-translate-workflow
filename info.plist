@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.sozora.google-translate</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>2B71711D-2916-4E3F-B599-82981C29346A</key>
@@ -57,35 +59,12 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>9B45F3CA-6761-4418-B127-39F0012863D6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>9B45F3CA-6761-4418-B127-39F0012863D6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>F2EB3014-588C-4717-82DA-BEA701208985</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BF63676D-D3E0-4306-8069-7B72DFDBD11C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CBE0051C-5BD8-42DA-AEE4-AC1D16BA00A6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -296,46 +275,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>tr-setkey</string>
-				<key>subtext</key>
-				<string>Open instructions in your browser.</string>
-				<key>text</key>
-				<string>Google Translate - get an API key.</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BF63676D-D3E0-4306-8069-7B72DFDBD11C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://cloud.google.com/translate/docs/getting-started#set_up_your_project</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>CBE0051C-5BD8-42DA-AEE4-AC1D16BA00A6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Translate from/to your favourite language using Google Translate.
@@ -396,20 +335,6 @@ Have fun!</string>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>BF63676D-D3E0-4306-8069-7B72DFDBD11C</key>
-		<dict>
-			<key>xpos</key>
-			<integer>60</integer>
-			<key>ypos</key>
-			<integer>390</integer>
-		</dict>
-		<key>CBE0051C-5BD8-42DA-AEE4-AC1D16BA00A6</key>
-		<dict>
-			<key>xpos</key>
-			<integer>260</integer>
-			<key>ypos</key>
-			<integer>390</integer>
-		</dict>
 		<key>F2EB3014-588C-4717-82DA-BEA701208985</key>
 		<dict>
 			<key>xpos</key>
@@ -421,6 +346,6 @@ Have fun!</string>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/pbojkov/alfred-workflow-google-translate</string>
 </dict>
 </plist>

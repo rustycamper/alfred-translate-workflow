@@ -65,7 +65,7 @@ def main(wf):
         api_key = wf.get_password('google_translate_api_key')
     except PasswordNotFound:
         wf.add_item('No API key set.',
-                    'Please use tr-setkey to set your Google API key.',
+                    'Type "tr-setkey" to set your Google API key.',
                     valid=False,
                     icon=ICON_WARNING)
         wf.send_feedback()
@@ -75,7 +75,7 @@ def main(wf):
     target_lang = wf.settings.get('target_lang', None)
     if not target_lang:
         wf.add_item('No target language set.',
-                    'Please use tr-setlang to set a language to translate to.',
+                    'Type tr-setlang to set a language to translate to.',
                     valid=False,
                     icon=ICON_WARNING)
         wf.send_feedback()
