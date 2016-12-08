@@ -44,6 +44,10 @@ def get_translations(api_key, target_lang, query):
 def main(wf):
     import hashlib
 
+    if wf.update_available:
+        # Download new version and tell Alfred to install it
+        wf.start_update()
+
     parser = argparse.ArgumentParser()
     # Add an optional (nargs='?') --setkey argument and save its
     # value to 'api_key' (dest). This will be called from a separate "Run Script"
@@ -126,7 +130,10 @@ def main(wf):
     wf.send_feedback()
 
 if __name__ == '__main__':
-    wf = Workflow()
+    wf = Workflow(update_settings={
+        'github_slug': 'pbojkov/alfred-workflow-google-translate',
+        'frequency': 3
+    })
     # Assign Workflow logger to a global variable for convenience
     log = wf.logger
     sys.exit(wf.run(main))
