@@ -35,18 +35,7 @@
 			</dict>
 		</array>
 		<key>4969AD8B-74F4-4DB5-A806-2A4C25FDACD8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9B45F3CA-6761-4418-B127-39F0012863D6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>4C3CC9ED-7318-4492-8BF2-F2032F13F2E1</key>
 		<array>
 			<dict>
@@ -113,7 +102,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>python google_translate.py --setkey "{query}"</string>
+				<string>python base_translate.py --setkey "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -171,7 +160,7 @@
 				<key>runningsubtext</key>
 				<string>translating...</string>
 				<key>script</key>
-				<string>/usr/bin/env python google_translate.py "{query}"</string>
+				<string>/usr/bin/env python base_translate.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>

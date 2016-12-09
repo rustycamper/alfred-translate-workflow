@@ -157,7 +157,7 @@ def main(wf):
 
     if args.target_lang:
         log.debug("+++++++ Setting target_lang to: " + args.target_lang)
-        wf.settings['target_lang'] = args.target_lang
+        wf.settings['googl_target_lang'] = args.target_lang
         return 0
 
     lang = args.query
@@ -166,7 +166,6 @@ def main(wf):
     for (code, name) in sorted_languages.items():
         if pattern.match(name):
             wf.add_item(name, code, arg=code, valid=True, icon=get_icon(code))
-            log.debug("+++++++ We got ourselves a hit: " + code)
             hit = True
     if not hit:
         wf.add_item(lang, "No matching language found.", icon=ICON_WARNING, valid=False)
