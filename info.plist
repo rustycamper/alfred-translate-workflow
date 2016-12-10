@@ -49,6 +49,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>56B94D75-6046-4766-92FD-F1D9F2C35D8C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C2714C28-FF2E-4771-84CA-EA37EDE1B725</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9B45F3CA-6761-4418-B127-39F0012863D6</key>
 		<array>
 			<dict>
@@ -66,34 +79,13 @@
 	<key>createdby</key>
 	<string></string>
 	<key>description</key>
-	<string>Translate a word or esntence using Google Translate.</string>
+	<string>Translate a word or sentence using Google or Microsoft Translate.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Google Translate</string>
+	<string>Translate service</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Your Google Translate API key was saved to Mac OS Keychain.</string>
-				<key>title</key>
-				<string>API key saved.</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>BC71A1BD-4BF6-4079-85B3-8431BD1CE7E0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -125,9 +117,9 @@
 				<key>keyword</key>
 				<string>tr-setkey</string>
 				<key>subtext</key>
-				<string>Set your Google Translate API key and hit Enter.</string>
+				<string>Paste your API key and hit Enter.</string>
 				<key>text</key>
-				<string>Google Translate - set your API key.</string>
+				<string>Translate - set your API key.</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -135,6 +127,27 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>2CB4B5F5-5654-46AC-99F4-DCDC92F7ED98</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Your API key was saved to Keychain.</string>
+				<key>title</key>
+				<string>API key saved.</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BC71A1BD-4BF6-4079-85B3-8431BD1CE7E0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -166,9 +179,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Translate a word or phrase using Google Translate.</string>
+				<string>Type a word or phrase to translate it.</string>
 				<key>title</key>
-				<string>Google Translate</string>
+				<string>Translate</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -178,23 +191,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>9B45F3CA-6761-4418-B127-39F0012863D6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>F2EB3014-588C-4717-82DA-BEA701208985</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -235,9 +231,9 @@
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<true/>
+				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
@@ -251,7 +247,7 @@
 				<key>subtext</key>
 				<string>Set target (translate to) language and hit Enter.</string>
 				<key>title</key>
-				<string>Google Translate - set target language.</string>
+				<string>Translate - set target language.</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -261,6 +257,89 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>2B71711D-2916-4E3F-B599-82981C29346A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>F2EB3014-588C-4717-82DA-BEA701208985</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python base_translate.py --setapi "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C2714C28-FF2E-4771-84CA-EA37EDE1B725</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>tr-setapi</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>working...</string>
+				<key>script</key>
+				<string>/usr/bin/env python base_translate.py --setapi "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Supported services: Google and Microsoft Translate.</string>
+				<key>title</key>
+				<string>Translate - select a translation service and hit Enter.</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>56B94D75-6046-4766-92FD-F1D9F2C35D8C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -285,23 +364,23 @@ Have fun!</string>
 		<key>2B71711D-2916-4E3F-B599-82981C29346A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>240</integer>
+			<integer>210</integer>
 		</dict>
 		<key>2CB4B5F5-5654-46AC-99F4-DCDC92F7ED98</key>
 		<dict>
 			<key>xpos</key>
 			<integer>30</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>50</integer>
 		</dict>
 		<key>4969AD8B-74F4-4DB5-A806-2A4C25FDACD8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>260</integer>
+			<integer>250</integer>
 			<key>ypos</key>
-			<integer>230</integer>
+			<integer>210</integer>
 		</dict>
 		<key>4C3CC9ED-7318-4492-8BF2-F2032F13F2E1</key>
 		<dict>
@@ -310,26 +389,40 @@ Have fun!</string>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
+		<key>56B94D75-6046-4766-92FD-F1D9F2C35D8C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>30</integer>
+			<key>ypos</key>
+			<integer>370</integer>
+		</dict>
 		<key>9B45F3CA-6761-4418-B127-39F0012863D6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>550</integer>
+			<integer>480</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>210</integer>
 		</dict>
 		<key>BC71A1BD-4BF6-4079-85B3-8431BD1CE7E0</key>
 		<dict>
 			<key>xpos</key>
 			<integer>460</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>50</integer>
+		</dict>
+		<key>C2714C28-FF2E-4771-84CA-EA37EDE1B725</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>370</integer>
 		</dict>
 		<key>F2EB3014-588C-4717-82DA-BEA701208985</key>
 		<dict>
 			<key>xpos</key>
-			<integer>790</integer>
+			<integer>720</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>210</integer>
 		</dict>
 	</dict>
 	<key>version</key>
