@@ -5,6 +5,7 @@
 Usage:
 ---
 * `tr` <query>: translate query.
+* `tr-setapi` <API>: select Google or Microsoft Translate service.
 * `tr-setkey` <API key>: set your API key.
 * `tr-setlang` <language>: set target language (language to translate to).
 

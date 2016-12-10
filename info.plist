@@ -89,6 +89,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>tr-setkey</string>
+				<key>subtext</key>
+				<string>Paste your API key and hit Enter.</string>
+				<key>text</key>
+				<string>Translate - set your API key.</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2CB4B5F5-5654-46AC-99F4-DCDC92F7ED98</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -108,27 +129,6 @@
 			<string>4C3CC9ED-7318-4492-8BF2-F2032F13F2E1</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>tr-setkey</string>
-				<key>subtext</key>
-				<string>Paste your API key and hit Enter.</string>
-				<key>text</key>
-				<string>Translate - set your API key.</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>2CB4B5F5-5654-46AC-99F4-DCDC92F7ED98</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -345,20 +345,37 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Translate from/to your favourite language using Google Translate.
+	<string>**Translate from/to your favourite language using Google or Microsoft Translate.**
+
+Usage:
+---
+* `tr` &lt;query&gt;: translate query.
+* `tr-setapi` &lt;API&gt;: select Google or Microsoft Translate service.
+* `tr-setkey` &lt;API key&gt;: set your API key.
+* `tr-setlang` &lt;language&gt;: set target language (language to translate to).
 
 
-To set up, you will need your own Google API key. Instructions how to get one are here: https://cloud.google.com/translate/docs/getting-started#set_up_your_project
+*Note*: You won't need to set a source (from) language. Both Google and Microsoft are pretty good at guessing 
+the origin language.
 
-The workflow will prompt you the first you run it to enter your API key. Should you need to re-enter it, run "tr-setkey".
+Features:
+---
+* Simple: setup once and just use it.
+* Secure: keys are stored in Mac's native Keychain tool.
+* Fast: repeat queries are cached for speed.
 
-To set a target language (one you will translate to), run "tr-setlang". You won't need to set a source (from) language, as Google is pretty good at guessing.
+Keyboard Shortcuts:
+---
+* Enter: copy translation to clipboard.
+* Command + C: copy translation to clipboard.
+* Command + Y: show quick preview on the respective translation web site.
+* Command + L: show translated text in large font.
 
-* Simple - setup once and just use it.
-* Secure - keys are stored in Mac's native Keychain tool.
-* Fast - all queries are cached for speed.
-
-Have fun!</string>
+Requirements:
+---
+The first time you run the workflow, it will prompt you to enter your API key for Google or Microsoft. 
+* Instructions on how to get a Google API key: https://cloud.google.com/translate/docs/getting-started#set_up_your_project
+* Instructions on how to get a Microsoft API key: https://www.microsoft.com/en-us/translator/getstarted.aspx</string>
 	<key>uidata</key>
 	<dict>
 		<key>2B71711D-2916-4E3F-B599-82981C29346A</key>
