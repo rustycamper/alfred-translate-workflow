@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-# encoding: utf-8
+# -*- coding: utf-8 -*-
+
 import os
 from urllib2 import quote, HTTPError
 from hashlib import sha224
