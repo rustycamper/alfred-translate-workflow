@@ -1,15 +1,16 @@
 # alfred-workflow-google-translate
 
-**Translate from/to your favourite language using Google Translate.**
+**Translate from/to your favourite language using Google or Microsoft Translate.**
 
 Usage:
 ---
 * `tr` <query>: translate query.
-* `tr-setkey` <API key>: set your Google Translate API key.
+* `tr-setkey` <API key>: set your API key.
 * `tr-setlang` <language>: set target language (language to translate to).
 
 
-*Note*: You won't need to set a source (from) language. Google is pretty good at guessing.
+*Note*: You won't need to set a source (from) language. Both Google and Microsoft are pretty good at guessing 
+the origin language.
 
 Features:
 ---
@@ -21,10 +22,11 @@ Keyboard Shortcuts:
 ---
 * Enter: copy translation to clipboard.
 * Command + C: copy translation to clipboard.
-* Command + Y: show quick preview on Google Translate web site.
-* Command + L: show translation in large font.
+* Command + Y: show quick preview on the respective translation web site.
+* Command + L: show translated text in large font.
 
 Requirements:
 ---
-The first time you run the workflow, it will prompt you to enter your Google Translate API key. 
-Instructions on how to get a key at https://cloud.google.com/translate/docs/getting-started#set_up_your_project
+The first time you run the workflow, it will prompt you to enter your API key for Google or Microsoft. 
+* Instructions on how to get a Google API key: https://cloud.google.com/translate/docs/getting-started#set_up_your_project
+* Instructions on how to get a Microsoft API key: https://www.microsoft.com/en-us/translator/getstarted.aspx
