@@ -31,3 +31,6 @@ Requirements:
 The first time you run the workflow, it will prompt you to enter your API key for Google or Microsoft. 
 * Instructions on how to get a Google API key: https://cloud.google.com/translate/docs/getting-started#set_up_your_project
 * Instructions on how to get a Microsoft API key: https://www.microsoft.com/en-us/translator/getstarted.aspx
+
+* Flag Icons by GoSquared (http://www.gosquared.com/)
+* Uses Alfred-Workflow library https://github.com/deanishe/alfred-workflow/
