@@ -109,7 +109,7 @@ class MicrosoftTranslate(object):
         self._source_lang = value
 
     def get_translations(self):
-        cache_key = sha224((self.target_lang + self.query)
+        cache_key = sha224(('MSFT' + self.target_lang + self.query)
                            .encode('utf-8')).hexdigest()
         # Get from cache translations newer than MAX_AGE_CACHE
         translation = self.wf.cached_data(cache_key, self.__get_translations,
